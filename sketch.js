@@ -56,7 +56,7 @@ function setup() {
   create_case_selector()
   create_chromosome_selector()
   
-  let sidebar_text = createP("Maternal contamination in amniotic fluid samples poses a significant challenge to prenatal SNP array analysis. Using an a priori approach based on calculated levels of AA, AB, BB (AAA, AAB, ABB, BBB) genotypes, we can determine the level of maternal contamination found on SNP-array")
+  let sidebar_text = createP("Maternal contamination in amniotic fluid samples poses a significant challenge to prenatal SNP array analysis. \n Excess heterozygosity which indicates the presence of additional alleles from maternal DNA, can be correlated with the level of mosaicism. \nUsing an a priori approach based on calculated levels of AA, AB, BB (AAA, AAB, ABB, BBB) genotypes, we can determine the level of maternal contamination found on SNP-array. We can calculate the % from the B-allele frequencies deviations")
   sidebar_text.position(930, 130)
   
 }
