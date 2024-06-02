@@ -80,7 +80,7 @@ function draw() {
 
 function create_mosaicism_selector(){
   mosaicism_selector = createSelect();
-  mosaicism_selector.position(620, 106)
+  mosaicism_selector.position(620, 107)
   mosaicism_options = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
   for (let mosaicism_option of mosaicism_options){mosaicism_selector.option(mosaicism_option);}
   style_mosaic_selector()
@@ -89,7 +89,7 @@ function create_mosaicism_selector(){
 
 function create_chromosome_selector(){
   chromosome_selector = createSelect();
-  chromosome_selector.position(830, 106)
+  chromosome_selector.position(830, 107)
   style_chromosome_selector()
   chromosome_options = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "X", "Y"]
 
@@ -101,7 +101,7 @@ function create_chromosome_selector(){
 
 function create_case_selector(){
   type_selector = createSelect();
-  type_selector.position(230, 106);
+  type_selector.position(230, 107);
   type_options = ["Allosomes", "X chromosome (if XY fetus)", "Maternal Heterotrisomy", "Maternal Isotrisomy", "Paternal Heterotrisomy", "Paternal Isotrisomy", "Maternal Deletion", "Paternal Deletion"]
   
   for (let type_option of type_options) {type_selector.option(type_option);}
@@ -173,7 +173,7 @@ function write_selector_line(){
   textAlign(LEFT, CENTER)
   textSize(18)
   text("SNP profile of ", 20, 20)
-  text(" for a mosaïcism of ", 360, 20)
+  text(" for a mosaïcism of ", 365, 20)
   text("% of chromosome ", 580, 20)
   pop()
 }
