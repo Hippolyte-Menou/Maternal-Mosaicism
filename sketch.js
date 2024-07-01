@@ -68,6 +68,8 @@ function draw() {
   draw_scales()
   draw_chromosome()
   
+  if (type_selector.value() == "X chromosome (if XY fetus)") {chromosome_selector.value("X")} 
+  
   write_selector_line()
 
   profile.display()

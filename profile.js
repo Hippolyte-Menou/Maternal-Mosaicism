@@ -26,8 +26,7 @@ let centromeres = {
 };
 
 let mos_lines
-let jitter_amount = 0.01
-
+let jitter_sd = 0.01
 
 
 class Profile {
@@ -207,7 +206,7 @@ class Profile {
     for (let i = 0; i < this.number_of_points; i++) {
       let x = i;
       let y = this.lines[Math.floor(Math.random() * number_of_lines)];
-      this.points.push({ x: x, y: y + random(-jitter_amount, jitter_amount)});      
+      this.points.push({ x: x, y: y + randomGaussian(0, jitter_sd)});      
     }
     return this.points
   }
